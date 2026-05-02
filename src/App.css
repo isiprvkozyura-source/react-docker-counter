@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.App-title {
+  margin: 0 0 16px 0;
+  font-size: clamp(1.6rem, 2.5vw + 1rem, 2.4rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.App-counter {
+  margin: 0 0 24px 0;
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 700;
+  color: #61dafb;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  min-width: 4ch;
+}
+
+.App-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.App-button {
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  min-width: 80px;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #61dafb;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    transform 0.05s ease;
+}
+
+.App-button:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.App-button:active {
+  transform: translateY(1px);
+}
+
+.App-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.App-button--reset {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.App-button--reset:hover {
+  background-color: #ff6b6b;
+  color: #282c34;
+}
+
+.App-hint {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
